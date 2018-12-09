@@ -1,6 +1,8 @@
-import './style.css';
+import shapes from './shapes/shapes';
 
-console.log('hello world!');
-console.log('hello World 2!');
-console.log('hello World 3!');
-console.log('hello world! 4');
+const triangle = new shapes.Triangle(5,10);
+
+console.log('Hello Shapes');
+
+console.log(triangle.height);
+console.log(triangle.area);
