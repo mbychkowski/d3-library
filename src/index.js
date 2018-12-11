@@ -1,10 +1,9 @@
-import shapes from './shapes/shapes';
+import Rectangle from './shapes/rectangle/Rectangle';
+import Triangle from './shapes/triangle/Triangle';
+import Circle from './shapes/circle/Circle';
 
-const triangle = new shapes.Triangle(5,10);
-const square = new shapes.Rectangle(100, 100);
-
-console.log('Hello Shapes');
-
-console.log(triangle.calcArea());
-
-square.drawShape();
+export default {
+    Rectangle,
+    Triangle,
+    Circle,
+}

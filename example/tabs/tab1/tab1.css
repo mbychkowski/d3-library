@@ -1,0 +1,53 @@
+#tab1-container {
+    padding: 10px;
+
+    display: grid;
+    grid-template-rows: 40% 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "tab1-p1 tab1-p2 tab1-p3"
+        "tab1-p4 tab1-p4 tab1-p4";
+
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+#tab1-p1 {
+    grid-area: tab1-p1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: aqua;
+}
+
+#tab1-p2 {
+    grid-area: tab1-p2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: white;
+}
+
+#tab1-p3 {
+    grid-area: tab1-p3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-color: white;
+}
+
+#tab1-p4 {
+    grid-area: tab1-p4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-color: white;
+}

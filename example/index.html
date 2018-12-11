@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="<%= htmlWebpackPlugin.files.chunks.example.css %>"
+    />
+  </head>
+  <body>
+    <div id="dash-container">
+
+      <!-- title bar -->
+      <div class="title" id="dash-p1">Chart Zoo [D3]</div>
+
+      <!-- side bar -->
+      <div id="dash-p2">
+        <button class="tablink" data-tablink="tab1-container">TAB 1</button>
+      </div>
+
+      <!-- content -->
+      <div id="dash-p3">
+
+        <div class="tabcontent" id="tab1-container">
+          <div id="tab1-p1">one</div>
+          <div id="tab1-p2">2</div>
+          <div id="tab1-p3">3</div>
+          <div id="tab1-p4">4</div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="<%= htmlWebpackPlugin.files.chunks.example.entry %>"></script>
+  </body>
+</html>

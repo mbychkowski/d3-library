@@ -6,7 +6,10 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     // entry
-    entry: { main: './src/index.js' },
+    entry: { 
+        example: './example/index.js',
+        main: './src/index.js',
+    },
 
     // output
     output: {
@@ -15,8 +18,8 @@ module.exports = {
     },
 
     devServer: {
-        contentBase: "./dist",
-        port: 8888
+        contentBase: './dist',
+        port: 8000
     },
 
     // loaders
@@ -51,7 +54,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/index.html',
+            template: './example/index.html',
             filename: 'index.html'
         }),
         new WebpackMd5Hash()
